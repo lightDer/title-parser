@@ -1,4 +1,11 @@
 (function() {
+  var defaultTitles = '科长,副科长,主任,副主任,主任科员,副主任科员,正科级干部,副科级干部,' 
+    + '部长,副部长,局长,副局长,' 
+    + '处长,副处长,馆长,副馆长,所长,副所长,站长,副站长,'
+    + '队长,大队长,支队长,副支队长,' 
+    + '督学,教导员,负责人,团委书记,党总支书记';
+  document.getElementById('js-titles').value = defaultTitles.split(',').join('\n');
+
   var parse = function parse(event) {
     event.preventDefault();
 
