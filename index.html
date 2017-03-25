@@ -35,14 +35,14 @@
         <textarea name="textarea" rows="15" id="js-input"></textarea> 
         <form class="pure-form">
           <fieldset>
-            <legend>Title keywords</legend>
+            <legend>Titles</legend>
               <div class="pure-g">
                 <div class="pure-u-md-1-2">
                   <textarea name="textarea" rows="10" id="js-titles"></textarea> 
                 </div>
                 <div class="pure-u-md-1-2">
                   <div class="lt-box">
-                    <button type="submit" class="pure-button pure-button-primary">Submit</button>
+                    <button type="submit" class="pure-button pure-button-primary">Parse</button>
                   </div>
                 </div>
               </div>
@@ -52,10 +52,13 @@
     </div>
     <div class="pure-u-lg-1-2">
       <div class="l-box">
-        <textarea name="textarea" rows="15" id="js-input"></textarea> 
-        <button type="submit" class="pure-button">Copy to clipboard</button>
+        <textarea name="textarea" rows="15" id="js-output"></textarea> 
+        <button type="submit" class="pure-button" id="js-clipboard" data-clipboard-target="#js-output">Copy to clipboard</button>
       </div>
     </div>
-</div>
+  </div>
+
+  <script src="js/clipboard.min.js"></script>
+  <script src="js/main.js"></script>
 </body>
 </html>
